@@ -1,0 +1,14 @@
+[
+  {
+    "title": "TESTE",
+    "start": "2019-05-26",
+    "end": "2019-05-27",
+    "allDay": false
+  },
+  {
+    "title": "TESTE 2",
+    "start": "2019-05-27",
+    "end": "2019-05-28",
+    "allDay": true
+  }
+]
