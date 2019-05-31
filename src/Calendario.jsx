@@ -14,27 +14,6 @@ import "./main.scss"; // webpack must be configured to do this
 class Calendario extends React.Component {
   constructor(props) {
     super(props);
-
-    const DayButton = {
-      text: "Dia",
-      click: () => this.updateCurrentView("dayGridDay")
-    };
-
-    const MonthButton = {
-      text: "Mes",
-      click: () => this.updateCurrentView("dayGridMonth")
-    };
-    const ListButton = {
-      text: "Lista",
-      click: () => this.updateCurrentView("list")
-    };
-
-    this.calendar = React.createRef();
-
-    this.state = {
-      defaultView: "dayGridMonth",
-      buttons: { DayButton, MonthButton, ListButton }
-    };
   }
 
   updateCurrentView = view => {
@@ -49,33 +28,35 @@ class Calendario extends React.Component {
         themeSystem={"bootstrap"}
         plugins={[dayGridPlugin, list]}
         locales={allLocales}
-        locale="pt"
+        locale="pt-br"
         firstDay={0}
         allDayDefault={false}
         listDayAltFormat={true}
         listDayFormat={true}
-        views={["month", "week", "day"]}
+        selectable={true}
+        selectHelper={true}
+        editable={true}
+        eventLimit={true}
         // month={true}
         changeView={this.getCurrentView}
         header={{
-          left: "prev,next today DayButton MonthButton ListButton",
+          left: "prev,next today",
           center: "title",
-          right: "month,  basicWeek, basicDay"
+          right: "dayGridMonth,dayGridWeek,dayGridDay,list"
         }}
         ref="calendar"
         buttonIcons={true}
-        titleFormat={{ year: "numeric", month: "long" }}
+        titleFormat={{ year: "numeric", month: "long", day: "numeric" }}
         displayEventEnd={true}
         displayEventTime={true}
-        customButtons={this.state.buttons}
-        type={"month"}
         events={[
           { title: "event 1", date: "2019-06-01 09:08:08" },
           {
             title: "event 2",
             start: "2019-06-01 22:08:08",
             end: "2019-06-01 23:59:59",
-            allDay: false
+            allDay: false,
+            color: "green"
           },
           { title: "event 3", date: "2019-06-01" },
           { title: "event 4", date: "2019-06-01" },
