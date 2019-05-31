@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",
@@ -26,14 +27,23 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/polyfill": "^7.4.4",
+    "@fullcalendar/core": "^4.1.0",
+    "@fullcalendar/daygrid": "^4.1.0",
+    "@fullcalendar/interaction": "^4.1.0",
+    "@fullcalendar/list": "^4.1.0",
+    "@fullcalendar/react": "^4.1.0",
     "moment": "^2.24.0",
     "react": "^16.8.6",
-    "react-big-calendar": "^0.21.0",
     "react-dom": "^16.8.6"
   }
 }
