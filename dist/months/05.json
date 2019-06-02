@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "event 2",
+    "start": "2019-06-01 22:08:08",
+    "end": "2019-06-01 23:59:59",
+    "allDay": false,
+    "color": "green"
+  },
+  {
+    "id": 2,
+    "title": "teste Azul",
+    "start": "2019-06-01 22:08:08",
+    "end": "2019-06-01 23:59:59",
+    "allDay": false,
+    "color": "blue"
+  },
+  {
+    "id": 3,
+    "title": "TESTE 2 Vermelho",
+    "start": "2019-06-01 22:08:08",
+    "end": "2019-06-01 23:59:59",
+    "allDay": true,
+    "color": "red"
+  }
+]
