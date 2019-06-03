@@ -1,45 +1,41 @@
-module.exports = {
-  MONTHS: [
-    "01",
-    "02",
-    "03",
-    "04",
-    "05",
-    "06",
-    "07",
-    "08",
-    "09",
-    "10",
-    "11",
-    "12"
-  ],
+import { Service } from "./service";
+let fs = require("fs");
 
-  mesesTotal: [],
+const MONTHS = [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12"
+];
 
-  loadMonths: function() {
-    var list = new Array();
+const loadService = new Service();
 
-    this.MONTHS.forEach(async (month, index) => {
-      var xobj = new XMLHttpRequest();
-
-      xobj.overrideMimeType("application/json");
-      xobj.open("GET", "./months/" + month + ".json", true); // Replace 'my_data' with the path to your file
-      xobj.onreadystatechange = () => {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-          let responseList = JSON.parse(xobj.responseText);
-          // console.log(responseList);
-          if (responseList.length > 0) {
-            list = list.concat(responseList);
-          }
-        }
-        console.log(list);
-      };
-
-      xobj.setRequestHeader("Content-Type", "application/json");
-      xobj.withCredentials = true;
-      xobj.send(null);
+const loadMonths = () => {
+  let result = [];
+  let list = [];
+  MONTHS.map(async (month, index) => {
+    let url = `./months/${month}.json`;
+    result = await fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        return data;
+      });
+    result.forEach(element => {
+      list.push(element);
     });
-
-    console.log(list);
-  }
+  });
+  return list;
 };
+
+let lista = loadMonths();
+console.log(lista);
+
+export default loadMonths;
