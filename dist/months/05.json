@@ -5,7 +5,9 @@
     "start": "2019-06-01 22:08:08",
     "end": "2019-06-01 23:59:59",
     "allDay": false,
-    "color": "green"
+    "color": "green",
+    "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHSASA",
+    "event_url": "http://youtube.com"
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "start": "2019-06-01 22:08:08",
     "end": "2019-06-01 23:59:59",
     "allDay": false,
-    "color": "blue"
+    "color": "blue",
+    "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHSASA",
+    "event_url": "http://pedrojefferson.com"
   },
   {
     "id": 3,
@@ -21,6 +25,9 @@
     "start": "2019-06-01 22:08:08",
     "end": "2019-06-01 23:59:59",
     "allDay": true,
-    "color": "red"
+    "color": "red",
+    "title": "Evento de FODA-SE",
+    "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHSASA",
+    "event_url": "http://google.com"
   }
 ]

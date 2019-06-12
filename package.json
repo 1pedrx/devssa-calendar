@@ -46,6 +46,7 @@
     "fs": "0.0.1-security",
     "moment": "^2.24.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6"
   }
 }
