@@ -6,9 +6,6 @@ import "./main.scss"; // webpack must be configured to do this
 class Event extends React.Component {
   constructor(props) {
     super(props);
-    // this.handleShow = this.handleShow.bind(this);
-    // this.handleClose = this.handleClose.bind(this);
-    // console.log("OOOK");
     this.state = {
       show: this.props.show
     };
@@ -51,14 +48,12 @@ class Event extends React.Component {
             {this.props.event_url}
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              variant="secondary"
-              style={{ width: "80%", margin: "auto" }}
-              onClick={this.handleClose}
+            <a
+              href={this.props.event_url}
+              className="btn btn-primary btn-lg btn-block"
             >
-              Close
-            </Button>
-            {/* <Button variant="primary">Save changes</Button> */}
+              Ir pro site do evento
+            </a>
           </Modal.Footer>
         </Modal>
       </ButtonToolbar>
