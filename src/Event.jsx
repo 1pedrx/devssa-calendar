@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, ButtonToolbar, Button } from "react-bootstrap";
 
-import "./main.scss"; // webpack must be configured to do this
+import "./css/main.scss"; // webpack must be configured to do this
 
 class Event extends React.Component {
   constructor(props) {

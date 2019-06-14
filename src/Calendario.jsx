@@ -9,7 +9,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import list from "@fullcalendar/list";
 // import loadMonths from "./loadEvents.js";
 
-import "./main.scss"; // webpack must be configured to do this
+import "./css/main.scss"; // webpack must be configured to do this
 
 class Calendario extends React.Component {
   constructor(props) {
@@ -44,7 +44,7 @@ class Calendario extends React.Component {
     // console.log(this.state.inicialEvents);
 
     return (
-      <div>
+      <div id="container">
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
