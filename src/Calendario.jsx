@@ -7,7 +7,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import Event from "./Event.jsx";
 import interactionPlugin from "@fullcalendar/interaction";
 import list from "@fullcalendar/list";
-import loadMonths from "./loadEvents.js";
+// import loadMonths from "./loadEvents.js";
 
 import "./main.scss"; // webpack must be configured to do this
 
