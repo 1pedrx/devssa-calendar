@@ -76,7 +76,7 @@ class Calendario extends React.Component {
           titleFormat={{ year: "numeric", month: "long", day: "numeric" }}
           displayEventEnd={true}
           displayEventTime={true}
-          events="./events/events.json"
+          events="./js/events.json"
         />
         <Event
           show={this.state.event.show}
