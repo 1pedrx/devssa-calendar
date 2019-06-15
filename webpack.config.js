@@ -37,7 +37,7 @@ module.exports = {
 
       var output = [];
       // var final = [];
-
+      fs.writeFileSync("public/js/events.json", JSON.stringify([])); //limpando arquivo antes de incluir
       glob("public/events/**/*.json", (error, files) => {
         files.forEach(filename => {
           const contents = JSON.parse(fs.readFileSync(filename, "utf8"));
