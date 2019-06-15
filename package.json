@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://1pedro.github.io/devssa-calendar/",
+  "homepage": "https://github.com/1pedro/devssa-calendar#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --mode development",
@@ -20,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/1pedro/devssa-calendar/issues"
   },
-  "homepage": "https://github.com/1pedro/devssa-calendar#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
@@ -31,7 +30,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.32.2",
+    "webpack": "^4.34.0",
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
