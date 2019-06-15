@@ -5,9 +5,9 @@
     "start": "2019-06-14 22:08:08",
     "end": "2019-06-14 23:59:59",
     "allDay": false,
-    "color": "green",
+    "color": "#60cf81",
     "local": "Rua",
-    "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHSASA",
+    "description": "Morbi et libero et ex tristique congue ut id tortor.  Aliquam egestas est id ligula ultricies aliquam.    Proin ultricies nibh sed elit consequat maximus.     Quisque placerat lectus eget imperdiet sagittis.     Sed vestibulum justo eu massa imperdiet bibendum.     Vestibulum id lectus tincidunt enim tempus congue.    Maecenas eu magna eget velit ultrices tempor sit amet sit amet massa.",
     "event_url": "http://youtube.com"
   },
   {
@@ -16,19 +16,38 @@
     "start": "2019-06-20 22:08:08",
     "end": "2019-06-20 23:59:59",
     "allDay": false,
-    "color": "blue",
-    "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHSASA",
+
+    "description": "Aenean non velit sit amet lorem tempus accumsan.     Sed non neque in est facilisis elementum in sed felis.     Sed ullamcorper arcu ut risus iaculis, nec aliquet sem varius.",
+    "event_url": "http://pedrojefferson.com"
+  },
+  {
+    "id": 9,
+    "title": "Evento treix",
+    "start": "2019-06-20 22:08:08",
+    "end": "2019-06-20 23:59:59",
+    "allDay": true,
+    "color": "yellow",
+    "description": "Aenean non velit sit amet lorem tempus accumsan.     Sed non neque in est facilisis elementum in sed felis.     Sed ullamcorper arcu ut risus iaculis, nec aliquet sem varius.",
     "event_url": "http://pedrojefferson.com"
   },
   {
     "id": 3,
     "title": "TESTE 2 Vermelho",
-    "start": "2019-06-22 22:08:08",
+    "start": "2019-06-20 22:08:08",
     "end": "2019-06-24 23:59:59",
     "allDay": true,
-    "color": "red",
-    "title": "Evento de FODA-SE",
-    "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHSASA",
+    "color": "#a4005a",
+    "description": "Morbi et libero et ex tristique congue ut id tortor.     Aliquam egestas est id ligula ultricies aliquam.     Proin ultricies nibh sed elit consequat maximus.",
+    "event_url": "http://google.com"
+  },
+  {
+    "id": 9,
+    "title": "Hackaton Sanar",
+    "start": "2019-06-29 22:08:08",
+    "end": "2019-06-30 23:59:59",
+    "allDay": false,
+    "color": "rgb(0, 185, 179)",
+    "description": "Morbi et libero et ex tristique congue ut id tortor.     Aliquam egestas est id ligula ultricies aliquam.     Proin ultricies nibh sed elit consequat maximus.",
     "event_url": "http://google.com"
   }
 ]

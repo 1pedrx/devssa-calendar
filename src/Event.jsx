@@ -27,7 +27,7 @@ class Event extends React.Component {
   };
 
   render() {
-    // console.log(this.props.show);
+    console.log(this.props.color);
     return (
       <ButtonToolbar>
         <Modal
@@ -36,10 +36,25 @@ class Event extends React.Component {
           onHide={this.handleClose}
           aria-labelledby="example-modal-sizes-title-lg"
         >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-lg">
-              {this.props.title}
-            </Modal.Title>
+          <Modal.Header
+            closeButton
+            style={
+              this.props.color != "black" && this.props.color != ""
+                ? {
+                    backgroundColor: this.props.color,
+                    color: "white",
+                    textTransform: "capitalize",
+                    fontWeight: 800
+                  }
+                : {
+                    backgroundColor: "white",
+                    color: "black",
+                    textTransform: "capitalize",
+                    fontWeight: 800
+                  }
+            }
+          >
+            <Modal.Title id="event-header">{this.props.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             {this.props.description}
@@ -50,7 +65,19 @@ class Event extends React.Component {
           <Modal.Footer>
             <a
               href={this.props.event_url}
+              id="event-link"
               className="btn btn-primary btn-lg btn-block"
+              style={
+                this.props.color != "black" && this.props.color != ""
+                  ? {
+                      backgroundColor: this.props.color,
+                      color: "white",
+                      borderColor: this.props.color
+                      // textTransform: "capitalize",
+                      // fontWeight: 800
+                    }
+                  : {}
+              }
             >
               Ir pro site do evento
             </a>

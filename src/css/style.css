@@ -1,6 +1,105 @@
-#container {
+/* #container {
   width: 40%;
   height: 50%;
   margin: auto;
   display: block;
+  margin-top: 50px;
+} */
+
+#event-header {
+  font-weight: 800 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.719);
+}
+#event-link {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.801);
+}
+
+.fc-today {
+  background-color: rgba(0, 216, 144, 0.568) !important;
+}
+.fc-today > .fc-day-number {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(253, 107, 107);
+  border-radius: 20px;
+  padding: 3px;
+  text-align: center;
+  color: white;
+}
+
+/* .fc-day-number {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 20px;
+  padding: 3px;
+  text-align: center;
+  color: black;
+} */
+
+.fc-sun {
+  background-color: #eeeeee6b;
+}
+.fc-sat {
+  background-color: #eeeeee6b;
+}
+
+.fc-day-header {
+  background-color: rgba(0, 119, 255, 0.308) !important;
+}
+.fc-other-month {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+footer {
+  position: relative;
+  background-color: #114361;
+  height: 300px;
+  color: lightgray;
+  padding: 20px;
+  left: 0;
+  right: 0;
+}
+
+body {
+  padding: 0px !important;
+}
+#footer-logo {
+  margin: 20px;
+}
+
+#header-logo {
+  width: 140px;
+  height: 167px;
+}
+
+#index {
+  margin-bottom: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.footer-copyright {
+  /* position: absolute; */
+  bottom: 0;
+  background-color: #0b3650;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  color: lightgray;
+}
+
+footer .container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+}
+.footer-text {
+  align-self: center;
+}
+
+#header-logo {
+  margin-bottom: 20px;
 }

@@ -20,7 +20,8 @@ class Calendario extends React.Component {
         show: false,
         description: "aaaa",
         url: "aaaaa0",
-        title: "aaaaaaasdasdada"
+        title: "aaaaaaasdasdada",
+        color: "black"
       }
     };
 
@@ -35,22 +36,17 @@ class Calendario extends React.Component {
       // url: eventData.event.url,
       title: eventData.event.title,
       description: eventData.event.extendedProps.description,
-      event_url: eventData.event.extendedProps.event_url
+      event_url: eventData.event.extendedProps.event_url,
+      color: eventData.event.backgroundColor
     };
-    // console.log(eventData);
+    // console.log(eventData.event);
     await this.setState({ event: event });
   };
   render() {
     // console.log(this.state.inicialEvents);
 
     return (
-      <div id="container">
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous"
-        />
+      <div className="col-10 align-self-center" style={{ margin: "auto" }}>
         <FullCalendar
           id={"calendar-ssa"}
           defaultView={"dayGridMonth"}
@@ -87,6 +83,7 @@ class Calendario extends React.Component {
           title={this.state.event.title}
           description={this.state.event.description}
           event_url={this.state.event.event_url}
+          color={this.state.event.color}
         />
       </div>
     );
