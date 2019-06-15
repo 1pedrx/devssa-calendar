@@ -1,12 +1,2 @@
 [
-  {
-    "id": 10,
-    "title": "Hackaton Sanar2",
-    "start": "2019-07-29 22:08:08",
-    "end": "2019-07-30 23:59:59",
-    "allDay": false,
-    "color": "rgb(0, 185, 179)",
-    "description": "Morbi et libero et ex tristique congue ut id tortor.     Aliquam egestas est id ligula ultricies aliquam.     Proin ultricies nibh sed elit consequat maximus.",
-    "event_url": "http://google.com"
-  }
 ]
