@@ -17,7 +17,7 @@ module.exports = {
       }
     ]
   },
-  watch: true,
+  watch: false,
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
