@@ -40,8 +40,10 @@ module.exports = {
       fs.writeFileSync("public/js/events.json", JSON.stringify([])); //limpando arquivo antes de incluir
       glob("public/events/**/*.json", (error, files) => {
         files.forEach(filename => {
-          const contents = JSON.parse(fs.readFileSync(filename, "utf8"));
-          output = output.concat(contents);
+          if (filename != "public/events/example.json") {
+            const contents = JSON.parse(fs.readFileSync(filename, "utf8"));
+            output = output.concat(contents);
+          }
         });
 
         fs.writeFileSync("public/js/events.json", JSON.stringify(output));
