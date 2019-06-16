@@ -48,6 +48,7 @@
     "pre-build-webpack": "^0.1.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-html-parser": "^2.0.2"
   }
 }

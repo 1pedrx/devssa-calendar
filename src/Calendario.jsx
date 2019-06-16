@@ -21,7 +21,8 @@ class Calendario extends React.Component {
         description: "aaaa",
         url: "aaaaa0",
         title: "aaaaaaasdasdada",
-        color: "black"
+        color: "black",
+        description_type: "html"
       }
     };
 
@@ -29,7 +30,6 @@ class Calendario extends React.Component {
   }
 
   showEvent = async eventData => {
-    // let event = new Event();
     console.log(eventData);
     let event = {
       show: true,
@@ -37,7 +37,8 @@ class Calendario extends React.Component {
       title: eventData.event.title,
       description: eventData.event.extendedProps.description,
       event_url: eventData.event.extendedProps.event_url,
-      color: eventData.event.backgroundColor
+      color: eventData.event.backgroundColor,
+      description_type: eventData.event.description_type
     };
     // console.log(eventData.event);
     await this.setState({ event: event });
@@ -84,6 +85,7 @@ class Calendario extends React.Component {
           description={this.state.event.description}
           event_url={this.state.event.event_url}
           color={this.state.event.color}
+          description_type={this.state.event.description_type}
         />
       </div>
     );

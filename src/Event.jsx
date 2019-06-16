@@ -1,7 +1,12 @@
 import React from "react";
 import { Modal, ButtonToolbar, Button } from "react-bootstrap";
-
+import ReactHtmlParser from "react-html-parser";
 import "./css/main.scss"; // webpack must be configured to do this
+// import ReactHtmlParser, {
+//   processNodes,
+//   convertNodeToElement,
+//   htmlparser2
+// } from "react-html-parser";
 
 class Event extends React.Component {
   constructor(props) {
@@ -27,7 +32,6 @@ class Event extends React.Component {
   };
 
   render() {
-    console.log(this.props.color);
     return (
       <ButtonToolbar>
         <Modal
@@ -57,10 +61,10 @@ class Event extends React.Component {
             <Modal.Title id="event-header">{this.props.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            {this.props.description}
+            {ReactHtmlParser(this.props.description)}
             <br />
-            Link do Evento:
-            {this.props.event_url}
+
+            <span class="badge badge-secondary">{this.props.event_url}</span>
           </Modal.Body>
           <Modal.Footer>
             <a
@@ -73,8 +77,6 @@ class Event extends React.Component {
                       backgroundColor: this.props.color,
                       color: "white",
                       borderColor: this.props.color
-                      // textTransform: "capitalize",
-                      // fontWeight: 800
                     }
                   : {}
               }
